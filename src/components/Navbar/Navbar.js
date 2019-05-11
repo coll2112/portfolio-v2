@@ -16,7 +16,7 @@ class Navbar extends Component {
   };
 
   render() {
-    console.log(this.state.isToggled);
+    // console.log(this.state.isToggled);
     return (
       <div className='navbarContainer'>
         <span
@@ -29,15 +29,17 @@ class Navbar extends Component {
           <img src={Selfie} />
           <div>
             <a href='#top'>
-              <p>
+              <p classname='home'>
                 <i className='fas fa-home' title='Home' />
                 <span className='linkTitle'>Home</span>
               </p>
             </a>
-            <p>
-              <i className='fas fa-user' title='About' />
-              <span className='linkTitle'>About</span>
-            </p>
+            <a href='#about'>
+              <p>
+                <i className='fas fa-user' title='About' />
+                <span className='linkTitle'>About</span>
+              </p>
+            </a>
             <p>
               <i className='fas fa-image' title='Portfolio' />
               <span className='linkTitle'>Portfolio</span>

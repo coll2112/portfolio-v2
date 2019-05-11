@@ -12,15 +12,10 @@ export default function Main() {
           developer with skills in React, Node, SQL, and more then you've come
           to the right place.
         </p>
-        <div className='aboutLink'>
-          <a href=''>
-            Learn More <i class='fas fa-chevron-right' />
-          </a>
-        </div>
-        {/* <div className='buttons'>
-          <button>Projects</button>
-          <button>Contact</button>
-        </div> */}
+        <button className='learnBtn'>
+          Learn More
+          <i class='fas fa-angle-right' />
+        </button>
       </div>
     </div>
   );

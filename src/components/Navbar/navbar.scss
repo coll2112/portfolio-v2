@@ -7,6 +7,7 @@
   position: fixed;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 .navbarContent {
@@ -15,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100px;
-  background: black;
+  background: #e27d60;
   h1,
   p,
   i {
@@ -41,22 +42,29 @@
     cursor: pointer;
     transition: opacity 0.2s ease-in;
     padding: 1rem 0;
+    color: #efefef;
     &:hover {
       opacity: 1;
+    }
+  }
+
+  #top {
+    .home {
+      opacity: 1;
+      background: blue;
+    }
+  }
+
+  .social {
+    i {
+      font-size: 1rem;
+      padding: 0.5rem 0;
     }
   }
 }
 
 .linkTitle {
   display: none;
-}
-
-.social {
-  i {
-    font-size: 1rem;
-    // margin: 0.5rem 0;
-    // padding: 0.2rem;
-  }
 }
 
 .mobileNavContainer {
