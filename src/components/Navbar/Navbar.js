@@ -1,42 +1,107 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Selfie from '../../images/selfie.png';
 import './navbar.scss';
-import Selfie from './selfie.png';
 
-export default function Navbar() {
-  return (
-    <div className='navbarContainer'>
-      <div className='navbarContent'>
-        {/* <h1>LC</h1> */}
-        <img src={Selfie} />
-        <div>
-          <p>
-            <i class='fas fa-home' />
-          </p>
-          <p>
-            <i class='fas fa-user' />
-          </p>
-          <p>
-            <i class='fas fa-image' />
-          </p>
-          <p>
-            <i class='fas fa-laptop-code' />
-          </p>
-          <p>
-            <i class='fas fa-envelope' />
-          </p>
+class Navbar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isToggled: false,
+      mobileNavMenu: 'mobileNavContainer slideInRight'
+    };
+  }
+
+  toggleNav = () => {
+    this.setState({ isToggled: !this.state.isToggled });
+  };
+
+  render() {
+    console.log(this.state.isToggled);
+    return (
+      <div className='navbarContainer'>
+        <span
+          className={this.state.mobileNavMenu}
+          onClick={() => this.toggleNav()}
+        >
+          <i className='fas fa-bars' />
+        </span>
+        <div className='navbarContent'>
+          <img src={Selfie} />
+          <div>
+            <a href='#top'>
+              <p>
+                <i className='fas fa-home' title='Home' />
+                <span className='linkTitle'>Home</span>
+              </p>
+            </a>
+            <p>
+              <i className='fas fa-user' title='About' />
+              <span className='linkTitle'>About</span>
+            </p>
+            <p>
+              <i className='fas fa-image' title='Portfolio' />
+              <span className='linkTitle'>Portfolio</span>
+            </p>
+            <p>
+              <i className='fas fa-laptop-code' title='Skills' />
+              <span className='linkTitle'>Skills</span>
+            </p>
+            <p>
+              <i className='fas fa-envelope' title='Contact' />
+              <span className='linkTitle'>Contact</span>
+            </p>
+          </div>
+          <div className='social'>
+            <p>
+              <i className='fab fa-github' />
+            </p>
+            <p>
+              <i className='fab fa-linkedin' />
+            </p>
+            <p>
+              <i className='fas fa-at' />
+            </p>
+          </div>
         </div>
-        <div className='social'>
-          <p>
-            <i class='fab fa-github' />
-          </p>
-          <p>
-            <i class='fab fa-linkedin' />
-          </p>
-          <p>
-            <i class='fas fa-at' />
-          </p>
-        </div>
+        {/* <div className='mobileNavContent'>
+          <img src={Selfie} />
+          <div>
+            <p>
+              <i className='fas fa-home' title='Home' />
+              <p>Home</p>
+            </p>
+            <p>
+              <i className='fas fa-user' title='About' />
+              <p>About</p>
+            </p>
+            <p>
+              <i className='fas fa-image' title='Portfolio' />
+              <p>Portfolio</p>
+            </p>
+            <p>
+              <i className='fas fa-laptop-code' title='Skills' />
+              <p>Skills</p>
+            </p>
+            <p>
+              <i className='fas fa-envelope' title='Contact' />
+              <p>Contact</p>
+            </p>
+          </div>
+          <div className='social'>
+            <p>
+              <i className='fab fa-github' />
+            </p>
+            <p>
+              <i className='fab fa-linkedin' />
+            </p>
+            <p>
+              <i className='fas fa-at' />
+            </p>
+          </div>
+        </div> */}
       </div>
-    </div>
-  );
+    );
+  }
 }
+
+export default Navbar;

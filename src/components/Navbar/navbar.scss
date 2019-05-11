@@ -1,23 +1,31 @@
+@import '../../themes.scss';
+
 .navbarContainer {
   display: flex;
   justify-content: flex-start;
   min-height: 100vh;
   position: fixed;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .navbarContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 1rem;
+  align-items: center;
+  width: 100px;
   background: black;
   h1,
-  p {
+  p,
+  i {
     color: white;
+    // border: 1px solid white;
   }
   div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   img {
@@ -26,50 +34,68 @@
     margin-top: 1rem;
     border: 2px solid white;
   }
+  .fas,
+  .fab {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+    padding: 1rem 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
-.fas,
-.fab {
-  font-size: 1.5rem;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: opacity 0.2s ease-in;
-  &:hover {
-    opacity: 1;
-  }
+.linkTitle {
+  display: none;
 }
 
 .social {
   i {
     font-size: 1rem;
+    // margin: 0.5rem 0;
+    // padding: 0.2rem;
   }
 }
 
-@media (max-width: 768px) {
-  .navbarContainer {
-    min-height: initial;
-    top: 0;
-    width: 100vw;
-  }
-  .navbarContent {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    div {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      flex-direction: row;
-      &:nth-child(2n) {
-        width: 30%;
-      }
-      &:nth-child(3n) {
-        width: 10%;
-      }
-    }
-    img {
-      margin-bottom: 1rem;
-    }
-  }
+.mobileNavContainer {
+  display: none;
 }
+
+// @media (max-width: 768px) {
+//   .mobileNavContainer {
+//   }
+//   .navbarContent {
+//     position: absolute;
+//     left: -50vw;
+//   }
+//   .navbarContent {
+//     width: 35vw;
+//     img {
+//       width: 75px;
+//     }
+//   }
+//   .linkTitle {
+//     display: block;
+//     font-size: 0.7rem;
+//   }
+//   .fab,
+//   .fas {
+//     opacity: 1;
+//     font-size: 2rem;
+//   }
+//   .social {
+//     i {
+//       font-size: 1.3rem;
+//     }
+//   }
+//   p {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     span {
+//       padding-top: 0.5rem;
+//     }
+//   }
+// }
