@@ -2,7 +2,18 @@
 
 .aboutContainer {
   height: 100vh;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  // position: relative;
+  &:after {
+    content: '';
+    // opacity: 0.3;
+    top: 100vh;
+    left: 0;
+    bottom: -100vh;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 }

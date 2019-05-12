@@ -4,6 +4,12 @@
   margin-left: 100px;
   padding: 0 10rem;
   font: $raleway;
+  color: $neutral;
+  background-color: $primary;
+}
+
+.container {
+  overflow: hidden;
 }
 
 * {
@@ -97,6 +103,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  z-index: 2;
 }
 /* HTML5 display-role reset for older browsers */
 article,

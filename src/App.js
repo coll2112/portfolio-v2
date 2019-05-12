@@ -2,9 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
 import About from './components/About/About';
-import Divider from './components/Divider/Divider';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import './main.scss';
+import './app.scss';
 
 function App() {
   return (
@@ -12,7 +10,6 @@ function App() {
       <Navbar />
       <div className='main'>
         <Main />
-        <Divider />
         <About />
       </div>
     </div>

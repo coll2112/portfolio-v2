@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 
 .navbarContent {
@@ -16,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100px;
-  background: #e27d60;
+  background: $secondary;
   h1,
   p,
   i {
@@ -30,21 +31,22 @@
     align-items: center;
   }
   img {
-    width: 50px;
+    width: 60px;
     border-radius: 50em;
-    margin-top: 1rem;
-    border: 2px solid white;
+    margin-top: 0.5rem;
+    // border: 1px solid #8e98a3;
   }
   .fas,
   .fab {
-    font-size: 1.5rem;
-    opacity: 0.5;
+    font-size: 1.7rem;
+    opacity: 0.6;
     cursor: pointer;
     transition: opacity 0.2s ease-in;
     padding: 1rem 0;
-    color: #efefef;
+    color: $neutral;
     &:hover {
       opacity: 1;
+      // color: $secondary;
     }
   }
 
