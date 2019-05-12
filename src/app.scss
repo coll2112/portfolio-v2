@@ -3,9 +3,12 @@
 .main {
   margin-left: 100px;
   padding: 0 10rem;
-  font: $raleway;
+  font-family: $raleway;
   color: $neutral;
   background-color: $primary;
+  p {
+    line-height: 1.5rem;
+  }
 }
 
 .container {

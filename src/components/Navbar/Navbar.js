@@ -28,8 +28,8 @@ class Navbar extends Component {
         <div className='navbarContent'>
           <img src={Selfie} />
           <div>
-            <a href='#top'>
-              <p classname='home'>
+            <a href='#home'>
+              <p>
                 <i className='fas fa-home' title='Home' />
                 <span className='linkTitle'>Home</span>
               </p>
@@ -45,7 +45,7 @@ class Navbar extends Component {
               <span className='linkTitle'>Portfolio</span>
             </p>
             <p>
-              <i className='fas fa-laptop-code' title='Skills' />
+              <i class='fas fa-code' title='Skills' />
               <span className='linkTitle'>Skills</span>
             </p>
             <p>
