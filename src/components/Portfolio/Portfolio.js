@@ -14,7 +14,7 @@ export default function Portfolio() {
             }
             projectName={'ServiceDash'}
             projectInfo={
-              'ServiceDash allows users to sign up, submit service request applications, and admins are able to assign those applicaitons to companies that meet the needs of the users request.'
+              'ServiceDash allows users to sign up, submit service request applications, and admins are able to assign those applications to companies that meet the needs of the users request.'
             }
             projectSite={'http://www.service-dash.com/'}
             githubRepo={'https://github.com/Gray754/personal_project'}
