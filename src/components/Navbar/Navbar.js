@@ -60,12 +60,16 @@ class Navbar extends Component {
             </a>
           </div>
           <div className='social'>
-            <p>
-              <i className='fab fa-github' />
-            </p>
-            <p>
-              <i className='fab fa-linkedin' />
-            </p>
+            <a href='https://github.com/Gray754' target='_blank'>
+              <p>
+                <i className='fab fa-github' />
+              </p>
+            </a>
+            <a href='https://www.linkedin.com/in/leegcollins/' target='_blank'>
+              <p>
+                <i className='fab fa-linkedin' />
+              </p>
+            </a>
             <p>
               <i className='fas fa-at' />
             </p>
