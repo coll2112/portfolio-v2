@@ -4,7 +4,7 @@ import './About.scss';
 
 export default function About() {
   return (
-    <div className='aboutContainer' id='about'>
+    <div className='aboutContainer current' id='about'>
       <div className='aboutContent'>
         {/* <img src={Selfie} alt='Headshot of Lee Collins' /> */}
         <h2>A Little About Me</h2>

@@ -40,18 +40,24 @@ class Navbar extends Component {
                 <span className='linkTitle'>About</span>
               </p>
             </a>
-            <p>
-              <i className='fas fa-image' title='Portfolio' />
-              <span className='linkTitle'>Portfolio</span>
-            </p>
-            <p>
-              <i class='fas fa-code' title='Skills' />
-              <span className='linkTitle'>Skills</span>
-            </p>
-            <p>
-              <i className='fas fa-envelope' title='Contact' />
-              <span className='linkTitle'>Contact</span>
-            </p>
+            <a href='#portfolio'>
+              <p>
+                <i className='fas fa-image' title='Portfolio' />
+                <span className='linkTitle'>Portfolio</span>
+              </p>
+            </a>
+            <a href='#skills'>
+              <p>
+                <i class='fas fa-code' title='Skills' />
+                <span className='linkTitle'>Skills</span>
+              </p>
+            </a>
+            <a href='#contact'>
+              <p>
+                <i className='fas fa-envelope' title='Contact' />
+                <span className='linkTitle'>Contact</span>
+              </p>
+            </a>
           </div>
           <div className='social'>
             <p>

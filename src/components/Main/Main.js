@@ -3,7 +3,7 @@ import './Main.scss';
 
 export default function Main() {
   return (
-    <div className='mainContainer' id='home'>
+    <div className='mainContainer current' id='home'>
       <div className='mainContent'>
         <h3>Lee Collins</h3>
         {/* <h3>Full Stack Web Developer</h3> */}

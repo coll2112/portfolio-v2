@@ -1,10 +1,5 @@
 @import '../../themes.scss';
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -39,6 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   // color: $neutral;
   // text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   h3 {
@@ -78,19 +74,18 @@
   background: $secondary;
   cursor: pointer;
   color: $neutral;
-  transition: transform 0.2s ease-in, background-color 0.1s linear,
-    color 0.1s linear;
   font-weight: 600;
+  box-shadow: 0 1px 3px black;
   &:hover {
     // background-color: $secondary;
     // color: #efefef;
     i {
-      animation: rotateArrow 0.2s ease-out forwards;
+      animation: rotateArrowDown 0.2s ease-out forwards;
     }
   }
 }
 
-@keyframes rotateArrow {
+@keyframes rotateArrowDown {
   from {
     transform: rotate(0deg);
   }
