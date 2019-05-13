@@ -1,0 +1,164 @@
+@import '../../themes.scss';
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h2 {
+    border: 4px solid $accent;
+    padding: 2rem 7rem;
+    font-size: 2.5rem;
+    font-family: $montserrat;
+    text-align: center;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+  }
+}
+
+.contactTiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  i {
+    font-size: 4rem;
+    text-shadow: 0 1px 2px black;
+  }
+  p {
+    font-size: 0.8rem;
+    text-shadow: 0 1px 2px black;
+  }
+  a {
+    color: $neutral;
+    text-decoration: none;
+  }
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 5rem;
+}
+
+.email {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    background-image: url('https://images.pexels.com/photos/261706/pexels-photo-261706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: -365px;
+    content: '';
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s linear;
+  }
+  &:after {
+    // background: #e94e36;
+    background: $highlight;
+    content: '';
+    width: 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  &:hover {
+    &:before {
+      opacity: 0.5;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.linkedIn {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    background-image: url('../../images/selfie.png');
+    background-size: cover;
+    background-position: center;
+    content: '';
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s linear;
+  }
+
+  &:after {
+    background: #0077b5;
+    content: '';
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0.5;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.github {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    background-image: url('https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: -150px;
+    content: '';
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s linear;
+  }
+
+  &:after {
+    // background: #24292e;
+    background: $accent;
+    content: '';
+    width: 100%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0.4;
+      transform: scale(1.03);
+    }
+  }
+}

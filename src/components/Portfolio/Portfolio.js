@@ -1,5 +1,7 @@
 import React from 'react';
 import Projects from './Projects/Projects';
+import ServiceDashImg from './images/servicedash.png';
+import WellTreadImg from './images/welltread.png';
 import './Portfolio.scss';
 
 export default function Portfolio() {
@@ -9,9 +11,7 @@ export default function Portfolio() {
         <h2>Portfolio</h2>
         <div className='projects'>
           <Projects
-            projectImg={
-              'https://raw.githubusercontent.com/Gray754/personal_project/master/landing.png'
-            }
+            projectImg={ServiceDashImg}
             projectName={'ServiceDash'}
             projectInfo={
               'ServiceDash allows users to sign up, submit service request applications, and admins are able to assign those applications to companies that meet the needs of the users request.'
@@ -20,9 +20,7 @@ export default function Portfolio() {
             githubRepo={'https://github.com/Gray754/personal_project'}
           />
           <Projects
-            projectImg={
-              'https://leecollins.dev/static/media/welltread.f89fbe9f.png'
-            }
+            projectImg={WellTreadImg}
             projectName={'Well Tread'}
             projectInfo={
               'Well Tread is a web app that lets users look for and track hiking, mountain biking, and running trails across the US.'

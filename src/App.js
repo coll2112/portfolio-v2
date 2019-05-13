@@ -4,6 +4,7 @@ import Main from './components/Main/Main';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
+import Contact from './components/Contact/Contact';
 
 import './app.scss';
 
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Portfolio />
         <Skills />
+        <Contact />
       </div>
     </div>
   );
