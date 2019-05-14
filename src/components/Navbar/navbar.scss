@@ -34,30 +34,37 @@
     width: 60px;
     border-radius: 50em;
     margin-top: 0.5rem;
-    // display: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   }
-  // a {
-  //   text-decoration: none;
-  //   font-family: $raleway;
-  //   font-size: 0.8rem;
-  //   .linkTitle,
-  //   p {
-  //     display: block;
-  //     text-align: center;
-  //   }
-  //   span {
-  //     margin-top: -1rem;
-  //     transition: all 0.2s ease-out;
-  //     opacity: 0;
-  //     display: none;
-  //   }
-  //   &:hover {
-  //     span {
-  //       margin: 0;
-  //       opacity: 1;
-  //     }
-  //   }
-  // }
+  a {
+    text-decoration: none;
+    font-family: $raleway;
+    font-size: 0.8rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.507);
+    .linkTitle,
+    p {
+      display: block;
+      text-align: center;
+    }
+    span {
+      margin-top: -1rem;
+      transition: all 0.2s ease-out;
+      opacity: 0;
+      display: none;
+    }
+    &:hover {
+      span {
+        margin: 0;
+        opacity: 1;
+      }
+    }
+    &:hover {
+      .fas,
+      .fab {
+        opacity: 1;
+      }
+    }
+  }
   .fas,
   .fab {
     font-size: 1.7rem;

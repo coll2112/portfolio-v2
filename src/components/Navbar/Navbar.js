@@ -30,31 +30,31 @@ class Navbar extends Component {
           <div>
             <a href='#home'>
               <p>
-                <i className='fas fa-home' title='Home' />
+                <i className='fas fa-home' />
                 <span className='linkTitle'>Home</span>
               </p>
             </a>
             <a href='#about'>
               <p>
-                <i className='fas fa-user' title='About' />
+                <i className='fas fa-user' />
                 <span className='linkTitle'>About</span>
               </p>
             </a>
             <a href='#portfolio'>
               <p>
-                <i className='fas fa-image' title='Portfolio' />
+                <i className='fas fa-image' />
                 <span className='linkTitle'>Portfolio</span>
               </p>
             </a>
             <a href='#skills'>
               <p>
-                <i class='fas fa-code' title='Skills' />
+                <i class='fas fa-code' />
                 <span className='linkTitle'>Skills</span>
               </p>
             </a>
             <a href='#contact'>
               <p>
-                <i className='fas fa-envelope' title='Contact' />
+                <i className='fas fa-envelope' />
                 <span className='linkTitle'>Contact</span>
               </p>
             </a>
