@@ -70,9 +70,6 @@ class Navbar extends Component {
                 <i className='fab fa-linkedin' />
               </p>
             </a>
-            <p>
-              <i className='fas fa-at' />
-            </p>
           </div>
         </div>
         {/* <div className='mobileNavContent'>
