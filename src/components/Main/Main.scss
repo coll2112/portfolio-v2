@@ -5,10 +5,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  &:after {
+  &:before {
     background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
-    background-position: center;
     content: '';
     opacity: 0.2;
     top: 0;

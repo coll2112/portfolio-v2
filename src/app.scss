@@ -149,3 +149,9 @@ table {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0 5rem;
+  }
+}
