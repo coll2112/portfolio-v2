@@ -37,3 +37,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .skillsContent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

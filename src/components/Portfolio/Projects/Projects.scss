@@ -10,11 +10,6 @@
   color: $primary;
   border-radius: 0.3rem;
   transition: transform 0.2s linear, box-shadow 0.3s ease-in-out;
-  // &:hover {
-  // box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
-  // transform: scale(1.02);
-  // animation: spin 0.2s linear forwards;
-  // }
   img {
     width: 100%;
     border-radius: 0.3rem 0.3rem 0 0;
@@ -29,7 +24,7 @@
     button {
       font-size: 0.8rem;
       padding: 0.5rem 1.5rem;
-      //   margin-right: 1rem;
+      // margin-right: 1rem;
       border: none;
       border-radius: 0.2em;
       background: none;
@@ -42,15 +37,6 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       }
     }
-  }
-}
-
-@keyframes float {
-  from {
-    transform: translateY(1em);
-  }
-  to {
-    transform: translateY(1.5em);
   }
 }
 
@@ -75,5 +61,18 @@
   }
   p {
     line-height: 1.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectContainer {
+    width: 75%;
+    transition: none;
+    margin: 1rem 0;
+    .projectBtns {
+      button {
+        transition: none;
+      }
+    }
   }
 }
