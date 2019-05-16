@@ -81,7 +81,7 @@ class Navbar extends Component {
             className={this.state.mobileNavMenu}
             onBlur={() =>
               this.setState({
-                isToggled: false,
+                isToggled: false
               })
             }
           >

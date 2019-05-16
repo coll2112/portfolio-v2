@@ -172,3 +172,9 @@
     }
   }
 }
+
+@media (max-width: 525px) {
+  .mobileNavbarContent {
+    width: 65vw;
+  }
+}

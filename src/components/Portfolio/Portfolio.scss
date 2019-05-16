@@ -39,3 +39,13 @@
     align-items: center;
   }
 }
+
+@media (max-width: 525px) {
+  .portfolioContent {
+    h2 {
+      padding: 1rem;
+      box-shadow: none;
+      font-size: 2rem;
+    }
+  }
+}

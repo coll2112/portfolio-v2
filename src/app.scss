@@ -156,3 +156,9 @@ html {
     margin-left: 0;
   }
 }
+
+@media (max-width: 525px) {
+  .main {
+    padding: 0 2rem;
+  }
+}

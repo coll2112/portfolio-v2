@@ -1,7 +1,7 @@
 @import '../../themes.scss';
 
 .skillsContainer {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@
   grid-row-gap: 1rem;
   width: 85%;
   svg {
-    padding: 0.5rem;
+    padding: 0.3rem;
     background: $accent;
     border-radius: 0.5rem;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
@@ -41,5 +41,23 @@
 @media (max-width: 768px) {
   .skillsContent {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 525px) {
+  #skills {
+    padding-top: 10vh;
+  }
+  .skillsContainer {
+    h2 {
+      font-size: 1.5rem;
+      padding: 1rem 3rem;
+      box-shadow: none;
+    }
+  }
+  .skillsContent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.2rem;
+    grid-row-gap: 0.6em;
   }
 }
