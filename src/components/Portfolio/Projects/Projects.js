@@ -1,19 +1,31 @@
 import React from 'react';
 import './Projects.scss';
 
-export default function Projects(props) {
+export default function Projects({
+  projectImg,
+  projectName,
+  projectInfo,
+  projectSite,
+  githubRepo
+}) {
+  let projectURL;
+  if (projectSite !== undefined) {
+    projectURL = (
+      <a href={projectSite} target='_blank'>
+        <button>Live Site</button>
+      </a>
+    );
+  }
   return (
     <div className='projectContainer'>
-      <img src={props.projectImg} alt='' />
+      <img src={projectImg} alt='' />
       <div className='projectContent'>
-        <h3>{props.projectName}</h3>
-        <p>{props.projectInfo}</p>
+        <h3>{projectName}</h3>
+        <p>{projectInfo}</p>
       </div>
       <div className='projectBtns'>
-        <a href={props.projectSite} target='_blank'>
-          <button>Live Site</button>
-        </a>
-        <a href={props.githubRepo} target='_blank'>
+        {projectURL}
+        <a href={githubRepo} target='_blank'>
           <button>Github</button>
         </a>
       </div>

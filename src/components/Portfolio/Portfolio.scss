@@ -27,7 +27,7 @@
 .projects {
   display: flex;
   justify-content: space-between;
-  // flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
