@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, useMemo } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import MobileNav from './mobile-nav'
 import Selfie from '../../images/selfie.png'
 
