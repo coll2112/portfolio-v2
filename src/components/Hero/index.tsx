@@ -1,9 +1,9 @@
-import React from 'react'
-import './Main.scss'
+import React, { FunctionComponent } from 'react'
+import './Hero.scss'
 
-const Main = () => (
-	<div className='mainContainer current' id='home'>
-		<div className='mainContent'>
+const Hero: FunctionComponent = () => (
+	<div className='heroContainer current' id='home'>
+		<div className='heroContent'>
 			<h3>Lee Collins</h3>
 			<p>
 				Full stack web developer with experience in JavaScript, React, Typescript,
@@ -12,11 +12,11 @@ const Main = () => (
 			<a href='#about'>
 				<button className='learnBtn'>
 					Learn More
-					<i class='fas fa-angle-right' />
+					<i className='fas fa-angle-right' />
 				</button>
 			</a>
 		</div>
 	</div>
 )
 
-export default Main
+export default Hero

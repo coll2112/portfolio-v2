@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+
 import './Projects.scss'
 
-const Projects = ({
+interface Props {
+	projectImg: string
+	projectName: string
+	projectInfo: string
+	projectSite?: string
+	githubRepo?: string
+}
+
+const Projects: FunctionComponent<Props> = ({
 	projectImg,
 	projectName,
 	projectInfo,

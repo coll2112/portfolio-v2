@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import Selfie from '../../images/selfie.png'
+
 import './navbar.scss'
 
-const Navbar = () => {
+const Navbar: FunctionComponent = () => {
 	const [isToggled, setIsToggled] = useState(false)
 	let mobileNavMenu = 'mobileNavbarContainer animated slideInLeft'
 
@@ -37,7 +38,7 @@ const Navbar = () => {
 						</a>
 						<a href='#skills'>
 							<p>
-								<i class='fas fa-code' />
+								<i className='fas fa-code' />
 								<span className='linkTitle'>Skills</span>
 							</p>
 						</a>
@@ -95,7 +96,7 @@ const Navbar = () => {
 							</a>
 							<a href='#skills'>
 								<p>
-									<i class='fas fa-code' />
+									<i className='fas fa-code' />
 									<span className='linkTitle'>Skills</span>
 								</p>
 							</a>

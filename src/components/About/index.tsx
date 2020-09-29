@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import './About.scss'
 
-const About = () => (
+const About: FunctionComponent = () => (
 	<div className='aboutContainer current' id='about'>
 		<div className='aboutContent'>
 			<h2>A Little About Me</h2>
