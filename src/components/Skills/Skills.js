@@ -20,7 +20,7 @@ import VisualStudioIcon from './Icons/VisualStudioIcon'
 
 import './Skills.scss'
 
-export default function Skills() {
+const Skills = () => {
 	return (
 		<div className='skillsContainer' id='skills'>
 			<h2>Skills</h2>
@@ -47,3 +47,5 @@ export default function Skills() {
 		</div>
 	)
 }
+
+export default Skills

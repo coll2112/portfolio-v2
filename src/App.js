@@ -8,19 +8,17 @@ import Contact from './components/Contact/Contact'
 
 import './app.scss'
 
-function App() {
-	return (
-		<div className='container'>
-			<Navbar />
-			<div className='main'>
-				<Main />
-				<About />
-				<Portfolio />
-				<Skills />
-				<Contact />
-			</div>
+const App = () => (
+	<div className='container'>
+		<Navbar />
+		<div className='main'>
+			<Main />
+			<About />
+			<Portfolio />
+			<Skills />
+			<Contact />
 		</div>
-	)
-}
+	</div>
+)
 
 export default App

@@ -1,8 +1,7 @@
 import React from 'react'
 
-export default function VisualStudioIcon() {
+const VisualStudioIcon = () => {
 	let fill = '#007ACC'
-
 	return (
 		<svg viewBox='0 0 128 128'>
 			<path
@@ -69,3 +68,5 @@ export default function VisualStudioIcon() {
 		</svg>
 	)
 }
+
+export default VisualStudioIcon
