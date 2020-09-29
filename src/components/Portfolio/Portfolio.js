@@ -1,7 +1,7 @@
 import React from 'react'
 import Projects from './Projects/Projects'
-import ServiceDashImg from './images/servicedash.png'
-import WellTreadImg from './images/welltread.png'
+import ServiceDashImg from '../../images/servicedash.png'
+import WellTreadImg from '../../images/welltread.png'
 import './Portfolio.scss'
 
 const Portfolio = () => {

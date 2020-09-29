@@ -1,5 +1,4 @@
 import React from 'react'
-import Selfie from '../../images/selfie.png'
 import './About.scss'
 
 const About = () => (

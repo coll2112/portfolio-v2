@@ -15,7 +15,7 @@ const Navbar = () => {
 			</div>
 			<div className='navbarContainer'>
 				<div className='navbarContent'>
-					<img src={Selfie} />
+					<img src={Selfie} alt='avatar' />
 					<div>
 						<a href='#home'>
 							<p>
@@ -49,12 +49,20 @@ const Navbar = () => {
 						</a>
 					</div>
 					<div className='social'>
-						<a href='https://github.com/Gray754' target='_blank'>
+						<a
+							href='https://github.com/Gray754'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<p>
 								<i className='fab fa-github' />
 							</p>
 						</a>
-						<a href='https://www.linkedin.com/in/leegcollins/' target='_blank'>
+						<a
+							href='https://www.linkedin.com/in/leegcollins/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<p>
 								<i className='fab fa-linkedin' />
 							</p>
@@ -65,7 +73,7 @@ const Navbar = () => {
 			{isToggled && (
 				<div className={mobileNavMenu} onBlur={() => setIsToggled(!isToggled)}>
 					<div className='mobileNavbarContent'>
-						<img src={Selfie} />
+						<img src={Selfie} alt='avatar' />
 						<div>
 							<a href='#home'>
 								<p>
@@ -99,12 +107,20 @@ const Navbar = () => {
 							</a>
 						</div>
 						<div className='social'>
-							<a href='https://github.com/Gray754' target='_blank'>
+							<a
+								href='https://github.com/Gray754'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								<p>
 									<i className='fab fa-github' />
 								</p>
 							</a>
-							<a href='https://www.linkedin.com/in/leegcollins/' target='_blank'>
+							<a
+								href='https://www.linkedin.com/in/leegcollins/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								<p>
 									<i className='fab fa-linkedin' />
 								</p>
