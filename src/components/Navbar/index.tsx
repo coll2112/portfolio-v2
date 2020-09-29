@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import Selfie from '../../images/selfie.png'
+
 import './navbar.scss'
 
-const Navbar = () => {
+const Navbar: FunctionComponent = () => {
 	const [isToggled, setIsToggled] = useState(false)
 	let mobileNavMenu = 'mobileNavbarContainer animated slideInLeft'
 
@@ -15,7 +16,7 @@ const Navbar = () => {
 			</div>
 			<div className='navbarContainer'>
 				<div className='navbarContent'>
-					<img src={Selfie} />
+					<img src={Selfie} alt='avatar' />
 					<div>
 						<a href='#home'>
 							<p>
@@ -37,7 +38,7 @@ const Navbar = () => {
 						</a>
 						<a href='#skills'>
 							<p>
-								<i class='fas fa-code' />
+								<i className='fas fa-code' />
 								<span className='linkTitle'>Skills</span>
 							</p>
 						</a>
@@ -49,12 +50,20 @@ const Navbar = () => {
 						</a>
 					</div>
 					<div className='social'>
-						<a href='https://github.com/Gray754' target='_blank'>
+						<a
+							href='https://github.com/Gray754'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<p>
 								<i className='fab fa-github' />
 							</p>
 						</a>
-						<a href='https://www.linkedin.com/in/leegcollins/' target='_blank'>
+						<a
+							href='https://www.linkedin.com/in/leegcollins/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<p>
 								<i className='fab fa-linkedin' />
 							</p>
@@ -65,7 +74,7 @@ const Navbar = () => {
 			{isToggled && (
 				<div className={mobileNavMenu} onBlur={() => setIsToggled(!isToggled)}>
 					<div className='mobileNavbarContent'>
-						<img src={Selfie} />
+						<img src={Selfie} alt='avatar' />
 						<div>
 							<a href='#home'>
 								<p>
@@ -87,7 +96,7 @@ const Navbar = () => {
 							</a>
 							<a href='#skills'>
 								<p>
-									<i class='fas fa-code' />
+									<i className='fas fa-code' />
 									<span className='linkTitle'>Skills</span>
 								</p>
 							</a>
@@ -99,12 +108,20 @@ const Navbar = () => {
 							</a>
 						</div>
 						<div className='social'>
-							<a href='https://github.com/Gray754' target='_blank'>
+							<a
+								href='https://github.com/Gray754'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								<p>
 									<i className='fab fa-github' />
 								</p>
 							</a>
-							<a href='https://www.linkedin.com/in/leegcollins/' target='_blank'>
+							<a
+								href='https://www.linkedin.com/in/leegcollins/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								<p>
 									<i className='fab fa-linkedin' />
 								</p>

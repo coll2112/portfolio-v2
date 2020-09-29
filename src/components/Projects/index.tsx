@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+
 import './Projects.scss'
 
-const Projects = ({
+interface Props {
+	projectImg: string
+	projectName: string
+	projectInfo: string
+	projectSite?: string
+	githubRepo?: string
+}
+
+const Projects: FunctionComponent<Props> = ({
 	projectImg,
 	projectName,
 	projectInfo,
@@ -11,7 +20,7 @@ const Projects = ({
 	let projectURL
 	if (projectSite !== undefined) {
 		projectURL = (
-			<a href={projectSite} target='_blank'>
+			<a href={projectSite} target='_blank' rel='noopener noreferrer'>
 				<button>Live Site</button>
 			</a>
 		)
@@ -25,7 +34,7 @@ const Projects = ({
 			</div>
 			<div className='projectBtns'>
 				{projectURL}
-				<a href={githubRepo} target='_blank'>
+				<a href={githubRepo} target='_blank' rel='noopener noreferrer'>
 					<button>Github</button>
 				</a>
 			</div>
